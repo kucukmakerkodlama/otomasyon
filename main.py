@@ -362,9 +362,12 @@ def menu():
                 istatistik()
             else:
                 print('Başarı Notu Hesaplandıktan Sonra Bu Fonksiyon Çalışabilir')
+        elif (secim > 8):
+            print('Geçerli bir seçenek girin.')
         elif (secim == 8):
             return 'Çıkış Yapıldı'
         menu()
+
     except ValueError:
         print('Numerik Bir Değer Giriniz')
         menu()
