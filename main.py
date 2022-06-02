@@ -197,8 +197,9 @@ def kayitSilme():
                 if (int(sinifList[i].ogrenciNo) == numara):
                     durum = 1
                     index = i
-            del sinifList[index]
-            print('Kayıt silindi!\n')
+                    del sinifList[index]
+                    print('Kayıt silindi!\n')
+                print('kayıt bulunamadı')
 # kayıtsız ise :
         except ZeroDivisionError:
             print('Sisteme Kayıtlı Öğrenci Numarası Bulunamadı!')
